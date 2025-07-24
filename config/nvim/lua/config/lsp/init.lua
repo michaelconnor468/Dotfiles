@@ -9,6 +9,4 @@ if not ok then
     return
 end
 
-lsp.sumneko_lua.setup({})
-
 require('config.lsp.settings.lua')

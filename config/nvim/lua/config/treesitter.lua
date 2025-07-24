@@ -5,30 +5,15 @@ if not ok then
 end
 
 configs.setup {
-    ensure_installed = 'all',
+    ensure_installed = {'python', 'lua', 'java', 'kotlin', 'c', 'cpp', 'javascript', 'typescript'},
     sync_install = false,
+    auto_install = true
     ignore_installl = {},
     highlight = {
         enable = true, -- enables whole extension
-        disable = {}, -- for particular languages
+    },
+    indent = {
+        enable = true, 
     },
     additional_vim_regex_highlighting = false
-}
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = 'all',
-  sync_install = false,
-  auto_install = true,
-  ignore_install = {},
-  highlight = {
-    enable = true,
-    disable = {},
-    disable = function(lang, buf)
-        local max_filesize = 1000 * 1024 -- 1 MiB
-        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-        if ok and stats and stats.size > max_filesize then
-            return true
-        end
-    end,
-    additional_vim_regex_highlighting = false,
-  },
 }

@@ -100,5 +100,4 @@ if not ok then
 end
 
 mason.setup({
-    ensure_installed = { "sumneko_lua", }
 })

@@ -72,6 +72,11 @@ elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
     source ~/.config/zsh/hooks/linuxhook.sh
 fi
 
+# misc host-based envs
+if [[ "$(hostname)" == "michael-james-connor-L2VTVM06F4" ]]; then
+    source ~/.config/zsh/hooks/fairehook.sh
+fi
+
 source ~/.config/zsh/lscolors.sh
 
 # emacs vterm stuff

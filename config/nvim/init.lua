@@ -16,9 +16,8 @@ local modules_to_load = {
     'config.neogit'
 }
 
-local error_count = 0
 for _, module in ipairs(modules_to_load) do
-    require(module)
+    local ok, _ = pcall(require, module)
 end
 
 if vim.fn.has "mac" == 0 then
