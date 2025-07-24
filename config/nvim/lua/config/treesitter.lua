@@ -13,7 +13,7 @@ configs.setup {
         enable = true, -- enables whole extension
     },
     indent = {
-        enable = true, 
+        enable = true,
     },
     additional_vim_regex_highlighting = false
 }
