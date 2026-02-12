@@ -38,9 +38,9 @@ pull all="":
 
 # Full installation: pull, install yay, install all packages
 install:
+    #!/bin/sh
     just pull all
     sudo pacman -S --needed base-devel git
-    #!/bin/sh
     if [ ! -d /opt/yay ]; then
         sudo git clone https://aur.archlinux.org/yay.git /opt/yay
         sudo chown -R $USER:$USER /opt/yay
