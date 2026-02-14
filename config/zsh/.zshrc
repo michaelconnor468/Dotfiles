@@ -1,6 +1,6 @@
 export TERM="xterm-256color"
 export EDITOR="vim"
-export TERMINAL="kitty"
+export TERMINAL="alacritty"
 export JAVA_HOME="/usr/lib/jvm/java-19-openjdk"
 export PROMPT_EOL_MARK=''
 
