@@ -1,6 +1,6 @@
 [window]
 
-opacity = 0.9
+opacity = 1.0
 
 padding.x = 10
 padding.y = 10
@@ -10,7 +10,7 @@ decorations_theme_variant = "Light" # "Dark"
 
 [font]
 
-size = 10
+size = 11
 normal.family = "Hack Nerd Font Mono"
 bold.family = "Hack Nerd Font Mono"
 italic.family = "Hack Nerd Font Mono"
